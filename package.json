@@ -1,0 +1,43 @@
+{
+  "name": "video-calling-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "deno task dev:api & deno task dev:vite",
+    "dev:api": "deno run --allow-env --allow-net be/main.ts",
+    "dev:vite": "deno run -A npm:vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    
+    "make:migration": "deno run -A --unstable https://deno.land/x/nessie/cli.ts make:migration",
+    "make:seed": "deno run -A --unstable https://deno.land/x/nessie/cli.ts make:seed",
+    "migrate": "deno run -A --unstable https://deno.land/x/nessie/cli.ts migrate",
+    "rollback": "deno run -A --unstable https://deno.land/x/nessie/cli.ts rollback",
+    "seed": "deno run -A --unstable https://deno.land/x/nessie/cli.ts seed",
+    "db:status": "deno run -A --unstable https://deno.land/x/nessie/cli.ts status --file-names"
+
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.54.2",
+    "react-router": "^7.1.1",
+    "react-use-websocket": "^4.11.1",
+    "sass-embedded": "^1.83.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.11.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.11.0",
+    "vite": "^5.4.10"
+  }
+}
