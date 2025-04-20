@@ -3,6 +3,7 @@ import handleSocket from "./controllers/ws/ws.controller.ts";
 import auth from "./middleware/auth.ts";
 import logger from "./middleware/logger.ts";
 import apiRouter from "./controllers/api/mod.ts";
+import cors from "./middleware/cors.ts";
 
 const router = new Router();
 
@@ -27,6 +28,7 @@ app.use(apiRouter.allowedMethods());
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.use(auth);
+app.use(cors);
 app.use(logger.logger);
 app.use(logger.responseTime);
 
