@@ -8,6 +8,7 @@ const router = new Router();
 
 // deno-lint-ignore require-await
 router.get("/ws", async (ctx) => {
+  console.log("RECEIVED WS");
   if (!ctx.isUpgradable) {
     ctx.throw(501); // code for: Not implemented
   }
@@ -16,6 +17,7 @@ router.get("/ws", async (ctx) => {
   handleSocket(ctx, sock);
 });
 router.get("/", (ctx) => {
+  console.log("RECEIVED");
   ctx.response.body = "Hello world";
 });
 
@@ -29,4 +31,4 @@ app.use(logger.logger);
 app.use(logger.responseTime);
 
 
-app.listen();
+app.listen({ port: 8000 });

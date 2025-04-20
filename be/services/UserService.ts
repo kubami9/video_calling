@@ -1,5 +1,7 @@
-import { User } from "../schemas/user.schema.ts";
+import { Injectable } from "https://deno.land/x/inject/mod.ts";
+import User from "../models/user.model.ts";
 
+@Injectable()
 class UserService {
     user: User;
     constructor(user: User) {

@@ -4,7 +4,7 @@ import { ReadyState } from "react-use-websocket";
 import Chat from "../../components/Chat/Chat.tsx";
 import { Message, MessagePayload } from "@shared/types/types.ts";
 
-type params = {
+type VideoCallParams = {
   sendJsonMessage: (message: MessagePayload, keep?: boolean) => void;
   lastMessage: MessageEvent<string>;
   lastJsonMessage: {
@@ -14,7 +14,7 @@ type params = {
   readyState: ReadyState;
 };
 
-const VideoCall = (params: params) => {
+const VideoCall = (params: VideoCallParams) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const messageRef = useRef<HTMLInputElement>(null);
   const recipentIdRef = useRef<HTMLInputElement>(null);

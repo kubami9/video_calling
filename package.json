@@ -11,12 +11,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     
-    "make:migration": "deno run -A --unstable https://deno.land/x/nessie/cli.ts make:migration",
-    "make:seed": "deno run -A --unstable https://deno.land/x/nessie/cli.ts make:seed",
-    "migrate": "deno run -A --unstable https://deno.land/x/nessie/cli.ts migrate",
-    "rollback": "deno run -A --unstable https://deno.land/x/nessie/cli.ts rollback",
-    "seed": "deno run -A --unstable https://deno.land/x/nessie/cli.ts seed",
-    "db:status": "deno run -A --unstable https://deno.land/x/nessie/cli.ts status --file-names"
+    "make:migration": "deno run --allow-all https://deno.land/x/nessie/cli.ts make:migration -c ./be/nessie.config.ts",
+    "make:seed": "deno run --allow-all https://deno.land/x/nessie/cli.ts make:seed -c ./be/nessie.config.ts",
+    "migrate": "deno run --allow-all https://deno.land/x/nessie/cli.ts migrate -c ./be/nessie.config.ts",
+    "rollback": "deno run --allow-all https://deno.land/x/nessie/cli.ts rollback -c ./be/nessie.config.ts",
+    "seed": "deno run --allow-all https://deno.land/x/nessie/cli.ts seed -c ./be/nessie.config.ts",
+    "db:status": "deno run --allow-all https://deno.land/x/nessie/cli.ts status --file-names -c ./be/nessie.config.ts"
 
   },
   "dependencies": {

@@ -1556,6 +1556,7 @@
     }
   },
   "redirects": {
+    "https://deno.land/x/inject/mod.ts": "https://deno.land/x/inject@v0.1.2/mod.ts",
     "https://deno.land/x/postgres/mod.ts": "https://deno.land/x/postgres@v0.19.3/mod.ts"
   },
   "remote": {
@@ -1921,6 +1922,10 @@
     "https://deno.land/x/cliffy@v0.25.7/table/row.ts": "5f519ba7488d2ef76cbbf50527f10f7957bfd668ce5b9169abbc44ec88302645",
     "https://deno.land/x/cliffy@v0.25.7/table/table.ts": "ec204c9d08bb3ff1939c5ac7412a4c9ed7d00925d4fc92aff9bfe07bd269258d",
     "https://deno.land/x/cliffy@v0.25.7/table/utils.ts": "187bb7dcbcfb16199a5d906113f584740901dfca1007400cba0df7dcd341bc29",
+    "https://deno.land/x/inject@v0.1.2/decorators.ts": "369a7d6973d15efe9bec4c9d632ce8f3ee7cb50c9882bae4eca53a6d323487bf",
+    "https://deno.land/x/inject@v0.1.2/helper_types.ts": "77725b0ca04ac63c9f006b55c8c6a70c422722a12b90a18e76c7f8a9250e0ab4",
+    "https://deno.land/x/inject@v0.1.2/injector.ts": "1be74803e007b4410cfe8f1e3d28150fe0c4abffc960d5af7b0413b4ab01a54e",
+    "https://deno.land/x/inject@v0.1.2/mod.ts": "b002ad92da197affe13a7cb7eeade707b9714b1347b7c6df8c11a6b280b959d0",
     "https://deno.land/x/mysql@v2.12.1/deps.ts": "68635959a41bb08bc87db007679fb8449febc55d48202dff20b93cc23ef5820d",
     "https://deno.land/x/mysql@v2.12.1/mod.ts": "3246c9c259434563be69cc95d5b792f8aac7ef5d10b8a6c6589aa54ebf1bd266",
     "https://deno.land/x/mysql@v2.12.1/src/auth.ts": "129ea08b180d3e90e567c3f71e60432bb266304c224e17ea39d604bbcc1160d8",
@@ -2006,6 +2011,8 @@
     "https://deno.land/x/postgres@v0.19.3/query/types.ts": "540f6f973d493d63f2c0059a09f3368071f57931bba68bea408a635a3e0565d6",
     "https://deno.land/x/postgres@v0.19.3/utils/deferred.ts": "5420531adb6c3ea29ca8aac57b9b59bd3e4b9a938a4996bbd0947a858f611080",
     "https://deno.land/x/postgres@v0.19.3/utils/utils.ts": "ca47193ea03ff5b585e487a06f106d367e509263a960b787197ce0c03113a738",
+    "https://deno.land/x/reflect_metadata@v0.1.12-2/Reflect.ts": "f629ad7988465fff50dd34d0b969557d85bb175a0c43fe9af3e066b4993a31e7",
+    "https://deno.land/x/reflect_metadata@v0.1.12-2/mod.ts": "8b5e3b20f1e604c118df433e84a409b1d5116e885001047134cc42ecf84fa2cd",
     "https://deno.land/x/sono@v1.2/mod.ts": "1551b548c49a4b651abae0b61e05f017009ebd495c140c1cd913a748b002194f",
     "https://deno.land/x/sono@v1.2/src/client.ts": "117b93a005d93f63e4e76a55e04cd8edc0d697290443147297fc0912644dba86",
     "https://deno.land/x/sono@v1.2/src/eventhandler.ts": "cf838187f4d7ff01ebe5c0730835829bb9b0b81bab14a0e21f7850ff68e3d278",

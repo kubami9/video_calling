@@ -3,19 +3,18 @@ import {
     NessieConfig,
 } from "https://deno.land/x/nessie@2.0.11/mod.ts";
 
-const client = new ClientPostgreSQL({
+export const client = new ClientPostgreSQL({
     database: "video_calling",
-    hostname: "localhost",
     port: 5432,
     user: "kuba",
-    password: "",
+    password: "1234",
 });
 
 /** This is the final config object */
 const config: NessieConfig = {
     client,
-    migrationFolders: ["./db/migrations"],
-    seedFolders: ["./db/seeds"],
+    migrationFolders: ["./be/db/migrations"],
+    seedFolders: ["./be/db/seeds"],
 };
 
 export default config;

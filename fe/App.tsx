@@ -8,8 +8,11 @@ import About from "./pages/About/About.tsx";
 
 function App() {
   const socketParams = useWebSocket(
-    "ws://localhost:8000",
+    "ws://localhost:8000/ws",
   );
+  fetch("http://localhost:8000").then((res) => {
+    console.log(res);
+  });
 
   return (
     <>
